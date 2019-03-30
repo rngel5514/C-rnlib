@@ -4,8 +4,8 @@ typedef struct Node{
     node * link ;
     void * data;
 }node;
-bool list_insert(node ** linktp,node * current);
-bool list_del(node * root,void * data);
-bool list_add(node *root,node * current);
-bool list_lookup(node *root,void *data);
+bool list_insert(node * root,int value);
+bool list_del(node * root,int value);
+bool list_add(node * ptr,int value);
+bool list_lookup(node * ptr,int value);
 #endif 
